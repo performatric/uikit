@@ -8,25 +8,25 @@ $alert-margin-vertical: $global-margin !default;
 $global-small-gutter: 15px !default;
 $alert-padding: $global-small-gutter !default;
 $alert-padding-right: $alert-padding + 14px !default;
-$global-muted-background: #f8f8f8 !default;
+$global-muted-background: #eff3f6 !default; // changed
 $alert-background: $global-muted-background !default;
 $global-color: #666 !default;
 $alert-color: $global-color !default;
 $alert-close-top: $alert-padding + 5px !default;
 $alert-close-right: $alert-padding !default;
-$global-primary-background: #1e87f0 !default;
+$global-primary-background: #1e87f0 !default; // changed
 $alert-primary-background: lighten(mix(white, $global-primary-background, 40%), 20%) !default;
 $alert-primary-color: $global-primary-background !default;
-$global-success-background: #32d296 !default;
+$global-success-background: #32d296 !default; // changed
 $alert-success-background: lighten(mix(white, $global-success-background, 40%), 25%) !default;
 $alert-success-color: $global-success-background !default;
-$global-warning-background: #faa05a !default;
+$global-warning-background: #faa05a !default; // changed
 $alert-warning-background: lighten(mix(white, $global-warning-background, 45%), 15%) !default;
 $alert-warning-color: $global-warning-background !default;
-$global-danger-background: #f0506e !default;
+$global-danger-background: #f0506e !default; // changed
 $alert-danger-background: lighten(mix(white, $global-danger-background, 40%), 20%) !default;
 $alert-danger-color: $global-danger-background !default;
-$global-gutter: 30px !default;
+$global-gutter: 15px !default; // changed
 $align-margin-horizontal: $global-gutter !default;
 $align-margin-vertical: $global-gutter !default;
 $global-medium-gutter: 40px !default;
@@ -42,7 +42,7 @@ $article-margin-top: $global-large-margin !default;
 $global-xxlarge-font-size: 2.625rem !default;
 $article-title-font-size: $global-xxlarge-font-size !default;
 $article-title-line-height: 1.2 !default;
-$global-small-font-size: 0.875rem !default;
+$global-small-font-size: 85% !default; // changed
 $article-meta-font-size: $global-small-font-size !default;
 $article-meta-line-height: 1.4 !default;
 $global-muted-color: #999 !default;
@@ -54,15 +54,15 @@ $global-background: #fff !default;
 $background-default-background: $global-background !default;
 $background-muted-background: $global-muted-background !default;
 $background-primary-background: $global-primary-background !default;
-$global-secondary-background: #222 !default;
+$global-secondary-background: #1b2431 !default; // changed
 $background-secondary-background: $global-secondary-background !default;
-$badge-size: 22px !default;
+$badge-size: 17px !default; // changed
 $badge-padding-vertical: 0 !default;
-$badge-padding-horizontal: 5px !default;
+$badge-padding-horizontal: 2px !default; // changed
 $badge-border-radius: 500px !default;
-$badge-background: $global-primary-background !default;
+$badge-background: $global-danger-background !default; // changed
 $badge-color: $global-inverse-color !default;
-$badge-font-size: $global-small-font-size !default;
+$badge-font-size: $global-small-font-size - 5% !default; // changed
 $badge-hover-color: $global-inverse-color !default;
 $inverse-global-primary-background: $global-inverse-color !default;
 $inverse-badge-background: $inverse-global-primary-background !default;
@@ -73,7 +73,7 @@ $base-body-background: $global-background !default;
 $global-font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif !default;
 $base-body-font-family: $global-font-family !default;
 $base-body-font-weight: normal !default;
-$global-font-size: 16px !default;
+$global-font-size: 15px !default; // changed
 $base-body-font-size: $global-font-size !default;
 $global-line-height: 1.5 !default;
 $base-body-line-height: $global-line-height !default;
@@ -342,7 +342,7 @@ $drop-width: 300px !default;
 $drop-margin: $global-margin !default;
 $dropdown-z-index: $global-z-index + 20 !default;
 $dropdown-min-width: 200px !default;
-$dropdown-padding: 15px !default;
+$dropdown-padding: 10px !default; // changed
 $dropdown-background: $global-muted-background !default;
 $dropdown-color: $global-color !default;
 $dropdown-margin: $global-small-margin !default;
@@ -406,6 +406,7 @@ $form-icon-width: $form-height !default;
 $form-icon-font-size: $global-font-size !default;
 $form-icon-color: $global-muted-color !default;
 $form-icon-hover-color: $global-color !default;
+$form-label-font-size: $global-font-size !default; // changed/new
 $internal-form-select-image: "data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%2224%22%20height%3D%2216%22%20viewBox%3D%220%200%2024%2016%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%20%20%20%20%3Cpolygon%20fill%3D%22#000%22%20points%3D%2212%201%209%206%2015%206%22%3E%3C%2Fpolygon%3E%0A%20%20%20%20%3Cpolygon%20fill%3D%22#000%22%20points%3D%2212%2013%209%208%2015%208%22%3E%3C%2Fpolygon%3E%0A%3C%2Fsvg%3E%0A" !default;
 $internal-form-radio-image: "data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%2216%22%20height%3D%2216%22%20viewBox%3D%220%200%2016%2016%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%20%20%20%20%3Ccircle%20fill%3D%22#000%22%20cx%3D%228%22%20cy%3D%228%22%20r%3D%222%22%3E%3C%2Fcircle%3E%0A%3C%2Fsvg%3E" !default;
 $internal-form-checkbox-image: "data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%2214%22%20height%3D%2211%22%20viewBox%3D%220%200%2014%2011%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%20%20%20%20%3Cpolygon%20fill%3D%22#000%22%20points%3D%2212%201%205%207.5%202%205%201%205.5%205%2010%2013%201.5%22%2F%3E%0A%3C%2Fsvg%3E" !default;
@@ -589,9 +590,9 @@ $modal-close-outside-hover-color: $global-inverse-color !default;
 $nav-item-padding-vertical: 5px !default;
 $nav-item-padding-horizontal: 0 !default;
 $nav-sublist-padding-vertical: 5px !default;
-$nav-sublist-padding-left: 15px !default;
+$nav-sublist-padding-left: 15px !default; // to change (only to parent with icon)
 $nav-sublist-deeper-padding-left: 15px !default;
-$nav-sublist-item-padding-vertical: 2px !default;
+$nav-sublist-item-padding-vertical: 5px !default; // changed
 $nav-parent-icon-width: ($global-line-height * 1em) !default;
 $nav-parent-icon-height: $nav-parent-icon-width !default;
 $nav-parent-icon-color: $global-color !default;
@@ -654,7 +655,7 @@ $navbar-subtitle-font-size: $global-small-font-size !default;
 $navbar-dropdown-z-index: $global-z-index + 20 !default;
 $navbar-dropdown-width: 200px !default;
 $navbar-dropdown-margin: 0 !default;
-$navbar-dropdown-padding: 15px !default;
+$navbar-dropdown-padding: 10px !default; // changed
 $navbar-dropdown-background: $global-muted-background !default;
 $navbar-dropdown-color: $global-color !default;
 $navbar-dropdown-grid-gutter-horizontal: $global-gutter !default;
@@ -697,9 +698,9 @@ $offcanvas-z-index: $global-z-index !default;
 $offcanvas-bar-width: 270px !default;
 $offcanvas-bar-padding-vertical: $global-margin !default;
 $offcanvas-bar-padding-horizontal: $global-margin !default;
-$offcanvas-bar-background: $global-secondary-background !default;
-$offcanvas-bar-color-mode: light !default;
-$offcanvas-bar-width-m: 350px !default;
+$offcanvas-bar-background: $global-background !default; // changed
+$offcanvas-bar-color-mode: dark !default; // changed
+$offcanvas-bar-width-m: $offcanvas-bar-width !default; // changed
 $offcanvas-bar-padding-vertical-m: $global-medium-gutter !default;
 $offcanvas-bar-padding-horizontal-m: $global-medium-gutter !default;
 $offcanvas-close-position: 20px !default;
@@ -708,7 +709,7 @@ $offcanvas-overlay-background: rgba(0,0,0,0.1) !default;
 $overlay-padding-horizontal: $global-gutter !default;
 $overlay-padding-vertical: $global-gutter !default;
 $overlay-default-background: rgba($global-background, 0.8) !default;
-$overlay-primary-background: rgba($global-secondary-background, 0.8) !default;
+$overlay-primary-background: rgba($global-secondary-background, 0.5) !default; // changed
 $overlay-primary-color-mode: light !default;
 $padding-padding: $global-gutter !default;
 $padding-padding-l: $global-medium-gutter !default;
@@ -832,12 +833,14 @@ $inverse-subnav-pill-item-active-color: $inverse-global-inverse-color !default;
 $inverse-subnav-item-disabled-color: $inverse-global-muted-color !default;
 $tab-margin-horizontal: 20px !default;
 $tab-item-padding-horizontal: 10px !default;
-$tab-item-padding-vertical: 5px !default;
+$tab-item-padding-vertical: 10px !default; // changed
 $tab-item-color: $global-muted-color !default;
 $tab-item-hover-color: $global-color !default;
 $tab-item-hover-text-decoration: none !default;
 $tab-item-active-color: $global-emphasis-color !default;
 $tab-item-disabled-color: $global-muted-color !default;
+$tab-item-font-size: $global-font-size !default; // changed/new
+$tab-item-border-width: 2px !default; // changed/new
 $inverse-tab-item-color: $inverse-global-muted-color !default;
 $inverse-tab-item-hover-color: $inverse-global-color !default;
 $inverse-tab-item-active-color: $inverse-global-emphasis-color !default;
