@@ -13,13 +13,6 @@ $background-default-background:                  $global-background !default;
 $background-muted-background:                    $global-muted-background !default;
 $background-primary-background:                  $global-primary-background !default;
 $background-secondary-background:                $global-secondary-background !default;
-$background-success-background:                  $global-success-background !default; // changed/new
-$background-danger-background:                   $global-danger-background !default; // changed/new
-$background-warning-background:                  $global-warning-background !default; // changed/new
-$background-grey-background:                     #bdc5d0 !default; // changed/new
-$background-blue-background:                     #1c84d0 !default; // changed/new
-$background-purple-background:                   #7d6bca !default; // changed/new
-$background-pink-background:                     #e96b80 !default; // changed/new
 
 
 /* ========================================================================
@@ -34,19 +27,6 @@ $background-pink-background:                     #e96b80 !default; // changed/ne
 .uk-background-muted { background-color: $background-muted-background; }
 .uk-background-primary { background-color: $background-primary-background; }
 .uk-background-secondary { background-color: $background-secondary-background; }
-
-
-/* Custom color // changed/new
- ========================================================================== */
-
- .uk-background-success { background-color: $background-success-background; } // changed/new
- .uk-background-danger { background-color: $background-danger-background; } // changed/new
- .uk-background-warning { background-color: $background-warning-background; } // changed/new
-
- .uk-background-grey { background-color: $background-grey-background; } // changed/new
- .uk-background-blue { background-color: $background-blue-background; } // changed/new
- .uk-background-purple { background-color: $background-purple-background; } // changed/new
- .uk-background-pink { background-color: $background-pink-background; } // changed/new
 
 
 /* Size

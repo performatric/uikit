@@ -7,8 +7,30 @@
 // Variables
 // ========================================================================
 
+$background-success-background:                  $global-success-background !default;
+$background-danger-background:                   $global-danger-background !default;
+$background-warning-background:                  $global-warning-background !default;
+$background-grey-background:                     #bdc5d0 !default;
+$background-blue-background:                     #1c84d0 !default;
+$background-purple-background:                   #7d6bca !default;
+$background-pink-background:                     #e96b80 !default;
+
+
+// Color
+// ========================================================================
+
+.uk-background-success { background-color: $background-success-background; }
+.uk-background-danger { background-color: $background-danger-background; }
+.uk-background-warning { background-color: $background-warning-background; }
+
+.uk-background-grey { background-color: $background-grey-background; }
+.uk-background-blue { background-color: $background-blue-background; }
+.uk-background-purple { background-color: $background-purple-background; }
+.uk-background-pink { background-color: $background-pink-background; }
+
 
 // Miscellaneous
 // ========================================================================
+
 
 // @mixin hook-background-misc(){}
