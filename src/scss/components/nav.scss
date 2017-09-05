@@ -28,6 +28,7 @@ $nav-item-padding-horizontal:                    0 !default;
 
 $nav-sublist-padding-vertical:                   5px !default;
 $nav-sublist-padding-left:                       15px !default;
+$nav-sublist-padding-right:                      15px !default;
 $nav-sublist-deeper-padding-left:                15px !default;
 $nav-sublist-item-padding-vertical:              2px !default;
 
@@ -113,7 +114,7 @@ $internal-nav-parent-open-image: "data:image/svg+xml;charset=UTF-8,%3Csvg%20widt
  */
 
 ul.uk-nav-sub {
-    padding: $nav-sublist-padding-vertical 0 $nav-sublist-padding-vertical $nav-sublist-padding-left;
+    padding: $nav-sublist-padding-vertical $nav-sublist-padding-right $nav-sublist-padding-vertical $nav-sublist-padding-left;
     @if(mixin-exists(hook-nav-sub)) {@include hook-nav-sub();}
 }
 
